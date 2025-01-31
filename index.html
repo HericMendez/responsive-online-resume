@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Currículo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container" id="pdfContent">
+      <div class="left_Side">
+        <div class="profileText">
+          <h2>
+            Héric Vinícius Mendes <br /><span>Desenvolvedor Front-end</span>
+          </h2>
+        </div>
+
+        <div class="contactInfo">
+          <h3 class="title">Informações de Contato</h3>
+          <ul>
+            <li>
+              <span class="icon"
+                ><i class="fa fa-envelope-o" aria-hidden="true"></i
+              ></span>
+              <span class="text"
+                ><a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=heric.mendez00@gmail.com"
+                  >heric.mendez00@gmail.com</a
+                >
+              </span>
+            </li>
+            <li>
+              <span class="icon"
+                ><i class="fa fa-linkedin" aria-hidden="true"></i
+              ></span>
+              <span class="text">
+                <a
+                  href="https://www.linkedin.com/in/hericmendes/"
+                  target="_blank"
+                  rel="noreferrer"
+                  >www.linkedin.com/in/hericmendes</a
+                >
+              </span>
+            </li>
+
+            <li>
+              <span class="icon"
+                ><i class="fa fa-github" aria-hidden="true"></i
+              ></span>
+              <span class="text"
+                ><a
+                  href="https://wa.me/5516993868494"
+                  target="_blank"
+                  rel="noreferrer"
+                  >www.github.com/HericMendez</a
+                >
+              </span>
+            </li>
+            <li>
+              <span class="icon"
+                ><i class="fa fa-whatsapp" aria-hidden="true"></i
+              ></span>
+              <span class="text"
+                ><a href="" target="_blank" rel="noreferrer"
+                  >(16) 99386-8494</a
+                ></span
+              >
+            </li>
+            <li>
+              <span class="icon"
+                ><i class="fa fa-map-marker" aria-hidden="true"></i
+              ></span>
+              <span class="text">
+                <a
+                  href="https://maps.app.goo.gl/doWhkjbs3AYBtnDt8"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Matão, SP</a
+                >
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="contactInfo education">
+          <h3 class="title">FORMAÇÃO</h3>
+          <ul>
+            <li>
+              <h5>2014 - 2017</h5>
+              <h4>Bacharelado em Administração de Empresas</h4>
+              <h4>Uniara</h4>
+            </li>
+            <li>
+              <h5>2019 - 2020</h5>
+              <h4>Técnico em Desenvolvimento de Sistemas</h4>
+              <h4>Etec Sylvio de Mattos Carvalho – Matão</h4>
+            </li>
+            <li>
+              <h5>2022 - 2026</h5>
+              <h4>Tecnólogo em Análise e Desenvolvimento de Sistemas</h4>
+              <h4>Fatec Taquaritinga</h4>
+            </li>
+          </ul>
+        </div>
+        <div class="contactInfo language">
+          <h3 class="title">Idiomas</h3>
+          <ul>
+            <li>
+              <span class="text">Português</span>
+              <span class="percent"><div class="skill100"></div></span>
+            </li>
+            <li>
+              <span class="text">Inglês</span>
+              <span class="percent"><div class="skill90"></div></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right_Side">
+        <div class="about">
+          <h2 class="title2">Perfil</h2>
+          <p>
+            Desenvolvedor front-end experiente em React, JavaScript e design de
+            interfaces. Trabalhei em projetos web e mobile, utilizando
+            bibliotecas como Material, Ant Design e Bootstrap, entre outras.
+          </p>
+          <p>
+            Possuo inglês avançado para conversação e já trabalhei em projetos
+            utilizando metodologias ágeis. Sendo autodidata desde sempre, busco
+            entregar soluções inovadoras e de alta qualidade, sempre procurando
+            por novos desafios e oportunidades para aprender e crescer.
+          </p>
+        </div>
+
+        <div class="about">
+          <h2 class="title2">Experiência</h2>
+          <div class="box">
+            <div class="year_company">
+              <h5>Janeiro/2024 - Presente</h5>
+              <h5>Dtec, São Paulo</h5>
+            </div>
+            <div class="text">
+              <h4>Desenvolvedor Front-end</h4>
+              <p>
+                Desenvolvimento do front-end de um sistema de gestão para uma
+                empresa especializada em reembolso médico. Durante o
+                desenvolvimento, participei ativamente do planejamento e tomadas
+                de decisão do projeto, e desenvolvi soluções baseadas nas
+                necessidades do cliente, sempre escrevendo código limpo e
+                escalável. Neste projeto utilizei React com a biblioteca Ant
+                Design.
+              </p>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="year_company">
+              <h5>Novembro/2022 - Janeiro/2024</h5>
+              <h5>Biotrônica, São Carlos</h5>
+            </div>
+            <div class="text">
+              <h4>Desenvolvedor Web</h4>
+              <p>
+                Desenvolvimento de Interfaces e Aplicativos Web responsivos,
+                incluindo a página principal e dashboards com React, Typescript,
+                Sass e bibliotecas Front-end,e integração com APIs. Minhas
+                soluções inovadoras melhoraram a experiência do usuário e
+                forneceram insights valiosos aos gestores, agregando valor e
+                eficiência ao negócio.
+              </p>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="year_company">
+              <h5>2022 - Presente</h5>
+              <h5>PolarSapiens, São Carlos</h5>
+            </div>
+            <div class="text">
+              <h4>Desenvolvedor Web / Mobile</h4>
+              <p>
+                Desenvolvimento da aplicação de avaliação psicológica nas
+                plataformas Web e Mobile, envolvendo o design das telas,
+                implementação de designs responsivos e integração com APIs
+                proprietárias, nas plataformas Web e Mobile, utilizando as
+                tecnologias HTML, CSS, Javascript, React, React Natie e a
+                plataforma Figma.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about skills">
+          <h2 class="title2">Habilidades Profissionais</h2>
+          <div class="box">
+            <h4>HTML</h4>
+            <div class="percent"><div class="skill90"></div></div>
+            <h4>CSS / Sass</h4>
+            <div class="percent"><div class="skill80"></div></div>
+            <h4>JavaScript</h4>
+            <div class="percent"><div class="skill90"></div></div>
+            <h4>React</h4>
+            <div class="percent"><div class="skill90"></div></div>
+
+            <h4>React Native</h4>
+            <div class="percent"><div class="skill70"></div></div>
+            <h4>Node.js</h4>
+            <div class="percent"><div class="skill60"></div></div>
+            <h4>SQL</h4>
+            <div class="percent"><div class="skill30"></div></div>
+            <h4>Python</h4>
+            <div class="percent"><div class="skill30"></div></div>
+            <h4>Docker</h4>
+            <div class="percent"><div class="skill30"></div></div>
+          </div>
+        </div>
+        <!--   <div data-page-break></div>
+        <div class="about">
+          <h2 class="title2">Cursos e Certificados</h2>
+          <div class="box">
+            <div class="year_company">
+              <h5>Udemy, 2025</h5>
+              <h5>4,5 horas</h5>
+            </div>
+            <div class="text">
+              <h4>Testes no Frontend com ReactJS - TDD, Vitest, Cypress</h4>
+            </div>
+          </div>
+          <div class="box">
+            <div class="year_company">
+              <h5>Udemy, 2024</h5>
+              <h5>26,5 horas</h5>
+            </div>
+            <div class="text">
+              <h4>Python Completo do Zero ao Avançado</h4>
+            </div>
+          </div>
+          <div class="box">
+            <div class="year_company">
+              <h5>Fatec, 2023</h5>
+              <h5>SCORE: 740</h5>
+            </div>
+            <div class="text">
+              <h4>TOEIC English Proficiency Test</h4>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <button class="print-button" id="btnDownload">🖨️ Imprimir</button>
+
+    <script src="print.js"></script>
+  </body>
+</html>
