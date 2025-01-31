@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Resume</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container" id="pdfContent">
+      <div class="left_Side">
+        <div class="profileText">
+          <h2>
+            Héric Vinícius Mendes <br /><span>Front-end Developer</span>
+          </h2>
+        </div>
+
+        <div class="contactInfo">
+          <h3 class="title">Contact Information</h3>
+          <ul>
+            <li>
+              <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+              <span class="text">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=heric.mendez00@gmail.com"
+                  >heric.mendez00@gmail.com</a
+                >
+              </span>
+            </li>
+            <li>
+              <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+              <span class="text">
+                <a
+                  href="https://www.linkedin.com/in/hericmendes/"
+                  target="_blank"
+                  rel="noreferrer"
+                  >www.linkedin.com/in/hericmendes</a
+                >
+              </span>
+            </li>
+            <li>
+              <span class="icon"><i class="fa fa-github" aria-hidden="true"></i></span>
+              <span class="text">
+                <a
+                  href="https://wa.me/5516993868494"
+                  target="_blank"
+                  rel="noreferrer"
+                  >www.github.com/HericMendez</a
+                >
+              </span>
+            </li>
+            <li>
+              <span class="icon"><i class="fa fa-whatsapp" aria-hidden="true"></i></span>
+              <span class="text"><a href="" target="_blank" rel="noreferrer">(16) 99386-8494</a></span>
+            </li>
+            <li>
+              <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+              <span class="text">
+                <a
+                  href="https://maps.app.goo.gl/doWhkjbs3AYBtnDt8"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Matão, SP</a
+                >
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="contactInfo education">
+          <h3 class="title">Education</h3>
+          <ul>
+            <li>
+              <h5>2014 - 2017</h5>
+              <h4>Bachelor's in Business Administration</h4>
+              <h4>Uniara</h4>
+            </li>
+            <li>
+              <h5>2019 - 2020</h5>
+              <h4>Technical Degree in Systems Development</h4>
+              <h4>Etec Sylvio de Mattos Carvalho – Matão</h4>
+            </li>
+            <li>
+              <h5>2022 - 2026</h5>
+              <h4>Technology Degree in Systems Analysis and Development</h4>
+              <h4>Fatec Taquaritinga</h4>
+            </li>
+          </ul>
+        </div>
+        <div class="contactInfo language">
+          <h3 class="title">Languages</h3>
+          <ul>
+            <li>
+              <span class="text">Portuguese</span>
+              <span class="percent"><div class="skill100"></div></span>
+            </li>
+            <li>
+              <span class="text">English</span>
+              <span class="percent"><div class="skill90"></div></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="right_Side">
+        <div class="about">
+          <h2 class="title2">Profile</h2>
+          <p>
+            Experienced front-end developer in React, JavaScript, and interface design. 
+            I have worked on web and mobile projects, using libraries such as Material UI, 
+            Ant Design, and Bootstrap, among others.
+          </p>
+          <p>
+            I have advanced English for conversation and have worked on projects using agile methodologies. 
+            Being self-taught, I strive to deliver innovative and high-quality solutions, always seeking new 
+            challenges and opportunities to learn and grow.
+          </p>
+        </div>
+      
+        <div class="about">
+          <h2 class="title2">Experience</h2>
+          <div class="box">
+            <div class="year_company">
+              <h5>January/2024 - Present</h5>
+              <h5>Dtec, São Paulo</h5>
+            </div>
+            <div class="text">
+              <h4>Front-end Developer</h4>
+              <p>
+                Front-end development of a management system for a company specializing in medical reimbursement. 
+                During development, I actively participated in planning and project decision-making, creating 
+                solutions based on client needs while maintaining clean and scalable code. In this project, 
+                I used React with the Ant Design library.
+              </p>
+            </div>
+          </div>
+      
+          <div class="box">
+            <div class="year_company">
+              <h5>November/2022 - January/2024</h5>
+              <h5>Biotrônica, São Carlos</h5>
+            </div>
+            <div class="text">
+              <h4>Web Developer</h4>
+              <p>
+                Developed responsive web interfaces and applications, including the main page and dashboards 
+                using React, TypeScript, Sass, and front-end libraries, as well as API integrations. 
+                My innovative solutions improved user experience and provided valuable insights to managers, 
+                adding value and efficiency to the business.
+              </p>
+            </div>
+          </div>
+      
+          <div class="box">
+            <div class="year_company">
+              <h5>2022 - Present</h5>
+              <h5>PolarSapiens, São Carlos</h5>
+            </div>
+            <div class="text">
+              <h4>Web / Mobile Developer</h4>
+              <p>
+                Developed a psychological assessment application for Web and Mobile platforms, 
+                including screen design, implementation of responsive layouts, and integration 
+                with proprietary APIs. The project involved using technologies such as HTML, CSS, 
+                JavaScript, React, React Native, and Figma.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="about skills">
+          <h2 class="title2">Professional Skills</h2>
+          <div class="box">
+            <h4>HTML</h4>
+            <div class="percent"><div class="skill90"></div></div>
+            <h4>CSS / Sass</h4>
+            <div class="percent"><div class="skill80"></div></div>
+            <h4>JavaScript</h4>
+            <div class="percent"><div class="skill90"></div></div>
+            <h4>React</h4>
+            <div class="percent"><div class="skill90"></div></div>
+
+            <h4>React Native</h4>
+            <div class="percent"><div class="skill70"></div></div>
+            <h4>Node.js</h4>
+            <div class="percent"><div class="skill60"></div></div>
+            <h4>SQL</h4>
+            <div class="percent"><div class="skill30"></div></div>
+            <h4>Python</h4>
+            <div class="percent"><div class="skill30"></div></div>
+            <h4>Docker</h4>
+            <div class="percent"><div class="skill30"></div></div>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+
+    <div class="floating-buttons box">
+      <button class="print-button" id="btnDownload"><span class="btn-icon">💾</span> <span  class="btn-text" >Download PDF</span> </button>
+      <a href="index.html">
+        <button class="lang-button" id="btnDownload"><span class="btn-icon">🇧🇷</span> <span class="btn-text" >Em Português</span></button>
+
+      </a>
+
+    </div>
+    <script src="print.js"></script>
+  </body>
+</html>

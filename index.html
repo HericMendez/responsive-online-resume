@@ -15,13 +15,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+<link rel="stylesheet" href="navbar.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
 
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
+
     <div class="container" id="pdfContent">
       <div class="left_Side">
         <div class="profileText">
@@ -264,8 +266,15 @@
         </div> -->
       </div>
     </div>
-    <button class="print-button" id="btnDownload">🖨️ Imprimir</button>
+    <div class="floating-buttons box">
+      <button class="print-button" id="btnDownload"><span class="btn-icon">💾</span> <span  class="btn-text" >Baixar PDF</span> </button>
+      <a href="english.html">
+        <button class="lang-button" id="btnDownload"><span class="btn-icon">🇺🇸</span> <span class="btn-text" >English Version</span></button>
+      </a>
 
-    <script src="print.js"></script>
+    </div>
+
+    <script src="script.js"></script>
+    
   </body>
 </html>
